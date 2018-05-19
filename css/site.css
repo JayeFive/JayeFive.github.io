@@ -1,0 +1,21 @@
+/*  */
+
+.toppest-section {
+    height: 100px;
+    background-color: red;
+}
+
+.top-section {
+    padding-top: 120px;
+    height: 500px;
+    width: 100%;
+    background-color: blue;
+}
+
+.photo-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: purple;
+}
