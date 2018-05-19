@@ -1,21 +1,81 @@
 /*  */
 
-.toppest-section {
+
+
+/* Navbar */
+.navbar {
     height: 100px;
-    background-color: red;
+    box-sizing: border-box;
+
+    border-style: dashed;
+    border-width: 1px;
+    
+    background-color: #f8f8f8;
 }
 
-.top-section {
+
+
+/* Front Page */
+
+.full-page {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 120px;
-    height: 500px;
+    height: 720px;
     width: 100%;
-    background-color: blue;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: #f8f8f8;
+}
+
+.left-pane, .center-pane, .right-pane {
+    box-sizing: border-box;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+
+
+/* Center Pane */
+.center-pane {
+    
+}
+
+.content-holder {
+    font-family: "Calibri", sans-serif;
+    position: relative;
+    top: 20%;
+    width: 100%;
 }
 
 .photo-wrapper {
+    /*position: relative;*/
+    /*top: 20%;*/
     width: 200px;
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
     background-color: purple;
 }
+
+.name-holder {
+    height: 40px;
+    padding-top: 36px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.title-holder {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+/* Right Pane */
+.right-pane {
+    
+}
+
