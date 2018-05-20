@@ -75,11 +75,18 @@ html, body {
 }
 
 .photo-wrapper {
-    width: 200px;
-    height: 200px;
+    box-sizing: border-box;
+    width: 240px;
+    height: 240px;
     margin: 0 auto;
-    border-style: dashed;
+    border-style: solid;
     border-radius: 50%;
+    border-width: 6px;
+    border-color: #0f1b07;
+    box-shadow: inset 0 0 5px 2px #0f1b07,
+                      0 0 5px 0px #0f1b07;
+    background-image: url("../cover-photo-240.png");
+    
 }
 
 .name h1{
