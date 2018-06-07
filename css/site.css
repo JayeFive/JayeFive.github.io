@@ -10,7 +10,7 @@ html, body {
     box-shadow: inset 2px 1px  0px #5c821a,
                       0   0   20px #0f1b07;
     border-radius: 16px;
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 
@@ -40,7 +40,6 @@ html, body {
     background-color: #fff;
 }
 
-
 .navbar i {
     align-items: center;
     text-align: center;
@@ -55,30 +54,64 @@ html, body {
 .full-page {
     box-sizing: border-box;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction:column;
     height: 720px;
     width: 100%;
 }
 
-/*Design debugging*/
-.center-pane, .side-pane {
-    box-sizing: border-box;
-}
-
-/* Center Pane */
-
 .center-content {
     position: relative;
     text-align: center;
-    top: 9%;
     width: 100%;
+    margin-top: 3.125em;
 }
 
-.side-pane, .center-pane {
+@media only screen and (min-width: 79.25em) {
+    .full-page {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .projects-pane {
+        order: 1;
+    }
+    
+    .profile-pane {
+        order: 2;
+    }
+    
+    .skills-pane {
+        order: 3;
+    }
+    
+    .empty {
+        order: 4;
+    }
+    
+    .footer {
+        order: 5;
+    }
+    
+    .center-content {
+        top: 9%;
+        margin-top: 0;
+    }
+}
+
+/*Design debugging*/
+/*.profile-pane, .side-pane {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/* Center Pane */
+
+
+.side-pane, .profile-pane {
     box-sizing: border-box;
     margin: 36px 36px;
     padding: 0 24px;
+    min-height: 38em;
 }
 
 .side-pane {
@@ -123,5 +156,6 @@ article ul {
 
 
 .footer {
+    display: block;
     text-align: center;
 }
