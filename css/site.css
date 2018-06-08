@@ -6,6 +6,10 @@ html, body {
     color: #000000;
 }
 
+a, a:visited {
+    color: #444;
+}
+
 .raised-box {
     box-shadow: inset 2px 1px  0px #5c821a,
                       0   0   20px #0f1b07;
@@ -49,13 +53,11 @@ html, body {
     font-size: 3em;
 }
 
-
-/* Front Page */
 .full-page {
     box-sizing: border-box;
     margin: 0;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: 720px;
     width: 100%;
 }
@@ -67,7 +69,7 @@ html, body {
     margin-top: 3.125em;
 }
 
-@media only screen and (min-width: 79.25em) {
+@media only screen and (min-width: 80em) {
     .full-page {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -99,19 +101,12 @@ html, body {
     }
 }
 
-/*Design debugging*/
-/*.profile-pane, .side-pane {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/* Center Pane */
-
-
 .side-pane, .profile-pane {
     box-sizing: border-box;
     margin: 36px 36px;
     padding: 0 24px;
-    min-height: 38em;
+    min-height: 41em;
+    min-width: 30em;
 }
 
 .side-pane {
@@ -141,6 +136,7 @@ html, body {
 
 .qoutee {
     font-style: normal;
+    text-align: right;
 }
 
 /* Side Panes */
@@ -152,8 +148,6 @@ article ul {
 .degree {
     text-indent: 1em;
 }
-
-
 
 .footer {
     display: block;
