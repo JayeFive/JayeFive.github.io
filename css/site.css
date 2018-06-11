@@ -11,8 +11,8 @@ a, a:visited {
 }
 
 .raised-box {
-    box-shadow: inset 2px 1px  0px #5c821a,
-                      0   0   20px #0f1b07;
+    box-shadow: inset 0px 0px  1px #5c821a,
+                      0px 0px 10px #0f1b07;
     border-radius: 16px;
     background-color: #ffffff;
 }
