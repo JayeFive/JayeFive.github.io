@@ -117,8 +117,9 @@ a, a:visited {
     width: 240px;
     height: 240px;
     margin: 0 auto;
+    border: solid 4px;
     border-radius: 50%;
-    background-image: url("../cover-photo-240.png");
+    background-image: url("../cover-photo-june.png");
 }
 
 .name h1{
